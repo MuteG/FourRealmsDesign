@@ -19,10 +19,6 @@ namespace FourRealms.Design.Item.Weapon
     public class AbstractWeapon : AbstractItem
     {
         /// <summary>
-        /// 获取或设置武器名称
-        /// </summary>
-        public string Name { get; set; }
-        /// <summary>
         /// 攻击力
         /// </summary>
         public D6 Power { get; set; }

@@ -21,7 +21,7 @@
         /// <returns></returns>
         public int Throw()
         {
-            return Throw(Count);
+            return Throw(Count) + Add;
         }
 
         /// <summary>
@@ -32,6 +32,20 @@
         public static int Throw(int count)
         {
             return Dice.Throw(count, 6);
+        }
+
+        public override string ToString()
+        {
+            string str = string.Format("{0}D6", Count);
+            if (0 > Add)
+            {
+                str += Add.ToString();
+            }
+            else if(0 < Add)
+            {
+                str += "+" + Add;
+            }
+            return str;
         }
     }
 }

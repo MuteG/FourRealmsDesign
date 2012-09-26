@@ -18,11 +18,14 @@ namespace FourRealms.Design.Life
     {
         public void Remove(HandPosition position)
         {
-            this.ToList().RemoveAll(item => item.Position == position);
-            //foreach (Hand hand in this.Items)
-            //{
-
-            //}
+            for (int i = 0; i < Items.Count; i++)
+            {
+                if (Items[i].Position == position)
+                {
+                    RemoveAt(i);
+                    i--;
+                }
+            }
         }
     }
 }

@@ -22,7 +22,13 @@ namespace FourRealms.Design.Demo.Player
             this.Hands.Remove(HandPosition.Left);
             foreach (Hand hand in this.Hands)
             {
-                hand.Hold(new Sword() { Power = new D6() { Count = 1, Add = 3 } });
+                hand.Hold(
+                    new Sword()
+                    {
+                        Power = new D6() { Count = 1, Add = 3 },
+                        Name = "刑天"
+                    }
+                    );
             }
             this.HP = D6.Throw(2);
             this.Name = "独臂神爹";

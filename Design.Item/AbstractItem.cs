@@ -14,5 +14,9 @@ namespace FourRealms.Design.Item
 
     public class AbstractItem
     {
+        /// <summary>
+        /// 获取或设置名称
+        /// </summary>
+        public string Name { get; set; }
     }
 }

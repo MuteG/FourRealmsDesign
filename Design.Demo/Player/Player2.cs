@@ -21,7 +21,13 @@ namespace FourRealms.Design.Demo.Player
         {
             foreach (Hand hand in this.Hands)
             {
-                hand.Hold(new Sword() { Power = new D6() { Count = 1, Add = 0 } });
+                hand.Hold(
+                    new Sword()
+                    {
+                        Power = new D6() { Count = 1, Add = 0 },
+                        Name = "鱼肠"
+                    }
+                    );
             }
             this.HP = D6.Throw(2);
             this.Sex = Life.Sex.Female;

@@ -51,6 +51,10 @@
     <Folder Include="Player\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Design.Dice\Design.Dice.csproj">
+      <Project>{3BE92013-6564-4931-B431-F36A7D8EE034}</Project>
+      <Name>Design.Dice</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Design.Item\Design.Item.csproj">
       <Project>{710EA609-DB7A-4DF9-8340-C7CD97CD8A9B}</Project>
       <Name>Design.Item</Name>
